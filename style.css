@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  background-color: #827568;
+  font-family: 'Raleway', sans-serif;
+}
+
+#baking{
+  width: 100vw;
+  opacity: 0.5;
+  margin: 0 auto;
+  border-bottom: 25px solid #564338
+}
+
+#logo{
+  width: 15vw;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  background-color: transparent
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#main{
+  height: 42vh;
+  width: 55vw;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 55%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+h2{
+  text-align: center;
+  color: white;
+  font-size: 27px;
+  text-shadow: 2px 2px #3a3636;
+  padding-bottom: 20px
+}
+
+
+h1{
+  color: white;
+  font-size: 55px;
+  text-align: center;
+  text-shadow: 2px 2px #3a3636;
+  padding: 30px;
+  font-family: 'Pacifico', cursive;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #564338;
+  opacity: 0.9;
+  min-height: 80px;
+}
+
+li {
+  float: left;
+  font-size: 22px;
+  border-radius: 8px; display: block;
+  margin-top: 15px; margin-bottom: 10px; height: 20px; line-height: 20px;
+  margin-left: 10px; background-color: #564338
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  border-radius: 8px;
+  width: 5vw;
+}
+
+li a:hover:not(.active, .ref) {
+   background-color: #9ea6b3;  border-radius: 8px;
+}
+
+.active {
+  background-color: #8BAEDF;  border-radius: 8px;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #564338;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 22px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 auto; display: block
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  background-color: transparent
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 33vh;
+  margin-top: 5vh
+}
+
+.column {
+  flex: 1;
+  color: #4e4946;
+  padding: 50px
+}
+
+.column > p{
+  background-color: transparent;
+  font-size: 30px;
+  font-weight; bold
+}
+
+.num{
+  font-size: 80px;
+  background-color: transparent
+}
+
+label{
+  background-color: white;
+  padding: 20px;
+  font-size: 22px;
+  margin: 0 auto;
+}
+
+#iWant{
+  background-color: #a3978f;
+  color: white;
+  font-size: 18px
+}
+
+#addIt{
+  background-color: #a3978f;
+   padding: 20px;
+  font-size: 22px;
+  border: none
+}
+
+form{
+  justify-content: center;
+  text-align: center
+}
+
+ol{
+  color: white;
+  text-align: center;
+  background-color: transparent
+}
+
+ol li{
+  background-color: transparent; float: none
+}
